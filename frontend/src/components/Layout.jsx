@@ -65,7 +65,7 @@ export default function Layout() {
     recognitionRef.current = recognition;
     recognition.continuous = false;
     recognition.interimResults = false;
-    recognition.lang = 'en-US';
+    recognition.lang = 'hi-IN'; // Set to Hindi (India) which also understands English words
     
     recognition.onstart = () => setIsListening(true);
     
